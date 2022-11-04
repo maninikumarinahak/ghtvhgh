@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Take Any Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+	<style>
+	
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
+	h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+	p{
+	font-family: 'Open Sans', sans-serif;
+	}
+	
+	.request{
+	font-family: "Raleway", sans-serif;
+	font-weight:600;
+	}
+/*
+	
+	.about-section{
+	position: relative;
+    padding: 80px;
+    margin-top: 0rem;
+    background-image: url(images/about-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 0;
+	
+	
+	
+	}
+*/
+	.about-section::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #181d38;
+    background-repeat: repeat;
+    content: "";
+    z-index: -1;
+    opacity: 0.8;
+}
+.menu li a {
+    color: #fff;
+    font-size: 17px;
+}
+
+.text-purple {
+    color: #6d33ff !important;
+}
+.box-shadow {
+    box-shadow: 0px 0px 20px #00bcd4 !important;
+}
+.icon-service {
+    display: inline-flex;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+	background:#fff;
+}
+.about img {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+.footer-menu li a{
+color:#fff;
+}
+.sptb {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.bg-white {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-white-rgb),var(--bs-bg-opacity))!important;
+	background-image:url(images/school-pattern-image-1.png);
+}
+.social-links a {
+    color: #777777;
+    padding-left: 15px;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+	float:right;
+}
+.product-box{
+background:#fff;
+-webkit-box-shadow: 3px 3px 3px 0px rgba(36,33,36,1);
+-moz-box-shadow: 3px 3px 3px 0px rgba(36,33,36,1);
+box-shadow: 3px 3px 3px 0px rgba(36,33,36,1);
+border:1px solid #d3d3d3;
+padding:10px;
+min-height:270px;
+margin-top:-86px;
+text-align:center;
+}
+.product-box h1 {
+    text-align: center;
+    font-size: 31px;
+    padding-bottom: 20px;
+    color: #1d678d;
+}
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #adadad;}
+input:-moz-placeholder { color: #adadad;}
+input::-moz-placeholder { color: #adadad;}
+input:-ms-input-placeholder { color: #adadad;}
+
+textarea::-webkit-input-placeholder { color: #adadad;}
+textarea:-moz-placeholder { color: #adadad;}
+textarea::-moz-placeholder { color: #adadad;}
+textarea:-ms-input-placeholder { color: #adadad;}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+.txt1 {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.txt2 {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.bg1 {background-color: #3b5998}
+.bg2 {background-color: #1da1f2}
+.bg3 {background-color: #ea4335}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrap-login100 {
+  width: 700px;
+/*  background: #f8f9f1;*/
+  background: #e9e9e9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+/*------------------------------------------------------------------
+[ Form ]*/
+
+.login100-form {
+    width: 100%;
+    min-height: 730px;
+    padding: 20px 20px 20px 20px;
+	background: #1d678d;
+}
+
+.login100-form-title {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.label-input100 {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  color: #0a181f;
+  line-height: 1.5;
+  padding-left: 7px;
+}
+
+.input100 {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.2;
+
+  display: block;
+  width: 93%;
+  /*  width: 100%;*/
+  height: 55px;
+  background: transparent;
+  padding: 0 7px 0 43px;
+}
+
+
+/*---------------------------------------------*/
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::after {
+  content: attr(data-symbol);
+  font-family: Material-Design-Iconic-Font;
+  color: #adadad;
+  font-size: 22px;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: calc(100% - 20px);
+  bottom: 0;
+  left: 0;
+  padding-left: 13px;
+  padding-top: 3px;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #7f7f7f;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
+}
+
+.input100:focus + .focus-input100::after {
+ /* color: #a64bf4;*/
+   color: #5cb874;
+}
+
+.has-val.input100 + .focus-input100::after {
+  /*color: #a64bf4;*/
+   color: #5cb874;
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrap-login100-form-btn {
+  width: 50%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -moz-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -webkit-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -o-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -ms-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+}
+
+.login100-form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+    background : #0a181f;
+/*  background: #a64bf4;
+  background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);*/
+  top: 0;
+  left: -100%;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login100-form-btn {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+}
+
+.wrap-login100-form-btn:hover .login100-form-bgbtn {
+  left: 0;
+}
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  bottom: calc((100% - 20px) / 2);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+  right: 2px;
+  pointer-events: none;
+
+  font-family: Poppins-Regular;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f06a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 16px;
+  bottom: calc((100% - 20px) / 2);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+  right: 8px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Social item ]*/
+.login100-social-item {
+  font-size: 25px;
+  color: #fff;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.login100-social-item:hover {
+  color: #fff;
+  background-color: #333333;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Responsive ]*/
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+} 
+
+
+
+	
+	
+	</style>
+</head>
+
+<body>
+    
+<!--<section class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6"> 
+                <h1 style="font-size:18px;color:#000;">Welcome To Take Any Test</h1>
+                
+                </div>
+				<div class="col-md-6">
+					<ul class="topheader-menu">
+						<li><a href=""><i class="fa fa-globe" aria-hidden="true"></i> Language</a></li>
+						<li><a href=""><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>
+						<li><a href=""><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>-->
+	
+	<section class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6"> 
+                
+                <div class="contact-info mr-auto">
+        <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:contact@example.com">tat@gmail.com</a>
+        <i class="fa fa-phone" aria-hidden="true"></i> <a>  +1 5589 55488 55</a>
+      </div>
+                </div>
+				<div class="col-md-6">
+				<div class="social-links">
+        <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" class="skype"><i class="fa fa-skype" aria-hidden="true"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </div>
+					<!--<ul class="topheader-menu">
+						<li><a href=""><i class="fa fa-globe" aria-hidden="true"></i> Language</a></li>
+						<li><a href=""><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>
+						<li><a href=""><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+					</ul>-->
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <img class="img-fluid" src="images/logo-1.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" target="_blank">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" target="_blank">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" target="_blank">Service</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="product.html" target="_blank">Product</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="pricing.html" target="_blank">Pricing</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+        </li> 
+      </ul>
+        
+        <div class="request-now"> <a href="registration.html" class="request" target="_blank">Registration</a> </div>
+      
+    </div>
+  </div>
+</nav>	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--<section class="middle-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"> <img src="images/logo-1.png" alt="LOGO"> </div>
+				<div class="col-md-7">
+					<ul class="menu">
+                        <li><a href="index.html" target="_blank">Home</a></li>
+                        <li><a href="about.html" target="_blank">About Us</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="product.html" target="_blank">Product</a></li>
+                        <li><a href="pricing.html" target="_blank">Pricing</a></li>
+						<li><a href="contact.html" target="_blank">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<div class="request-now"> <a href="registration.html" class="request" target="_blank">Registration</a> </div>
+				</div>
+			</div>
+		</div>
+	</section>-->
+	<!--
+    <section  class="proof"  style="">
+    <div class="container">
+        <div class="row">
+            <div class="cheat">
+                
+                <h1>
+  <span>100%</span>
+  <span>CHEAT</span>
+  <span>PROOF</span>
+  <span> &</span>
+  <span>SEAMLESS</span>
+  <span>ONLINE</span>
+  <span>EXAMINATION</span>
+  <span>SYSTEM</span>
+  
+</h1>
+                
+                
+                
+        
+        <p>A ONE STOP ONLINE EXAMINATION PLATFORM WITH MULTIPLE SOLUTIONS</p>
+            <a>GET CUSTOMIZED SOLUTION</a>
+            </div>
+        </div>
+        
+        
+        </div>
+    
+    
+    
+    </section>
+-->
+	
+	<section class="about-section">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-12">
+	<h1 style="text-align:center;color:#fff;">Registration</h1>
+	
+	</div>
+	
+	
+	</div>
+	
+	
+	</div>
+	
+	</section>
+	
+	
+	<div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+        <form class="login100-form validate-form" action="Ragistration/add_registration" method="post">
+          <div class="row">
+            <div class="col-sm-12"> 
+               
+            </div>                  
+          </div>
+          <span class="login100-form-title p-b-49"> 
+            <div><h3 style="color:#fff;font-size:35px;">Registration</h3></div> 
+          </span>
+
+          <div class="row">
+
+
+            <div class="col-sm-6">
+
+            <div class="wrap-input100 validate-input m-b-23" data-validate = "Student Name is reauired">
+              <span class="label-input100">Student Name</span>
+              <input class="input100" type="text" name="studname" placeholder="Type your Student Name">
+              <span class="focus-input100" data-symbol="&#xf206;"></span>
+            </div>
+            <div class="wrap-input100 validate-input m-b-23" data-validate = "Father Name is reauired">
+              <span class="label-input100">Father Name</span>
+              <input class="input100" type="text" name="f_name" placeholder="Type your Father Name">
+              <span class="focus-input100" data-symbol="&#xf206;"></span>
+            </div>
+            <div class="wrap-input100 validate-input m-b-23" data-validate = "Mother Name is reauired">
+              <span class="label-input100">Mother Name</span>
+              <input class="input100" type="text" name="m_name" placeholder="Type your Mother Name">
+              <span class="focus-input100" data-symbol="&#xf206;"></span>
+            </div>
+
+            
+            
+            <div class="wrap-input100 validate-input m-b-23" data-validate = "Email is reauired">
+              <span class="label-input100">Email</span>
+              <input class="input100" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Type your Email">
+              <span class="focus-input100" data-symbol="&#9993;"></span>
+            </div>
+            <div class="text-info" style="text-align:right;margin-top: -20px">
+              <span class="text-danger" style="cursor: pointer;" onclick="sendEmail()">Send Email Verification </span></div>
+             <div class="error2 text-danger"></div>
+             <div class="error3 text-success"></div>
+
+              <div class="wrap-input100 validate-input m-b-23"id='email_otp1' data-validate = "Email Otp is reauired">
+              <span class="label-input100">Enter Email Otp</span>
+              <input class="input100" type="number" name="email_otp" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==6) return false;" id='email_otp' placeholder="Type your Email OTP">
+
+              
+              <span class="focus-input100" data-symbol="&#9742;"></span>
+            </div>
+
+            </div>
+            <div class="col-sm-6">
+
+              
+
+            <div class="wrap-input100 validate-input m-b-23" data-validate = "Address is reauired">
+              <span class="label-input100">Address</span>
+              <input class="input100" type="text" name="address" placeholder="Type your Address">
+              <span class="focus-input100" data-symbol="&#9751;"> </span>
+            </div>
+
+            
+            <div class="wrap-input100 validate-input m-b-23" data-validate = "Class is reauired">
+              <span class="label-input100">Class</span>
+              <select class="input100" name="class" id="class">
+                <option value = ''>Select Class</option>
+                                  <option value="18">3 Test</option>
+                                    <option value="21">5 (Test)</option>
+                                    <option value="17">5 Test</option>
+                                    <option value="22">5(Test Class)</option>
+                                    <option value="2">Admin Class</option>
+                                    <option value="20">GD Goenka Teachers</option>
+                                    <option value="5">I</option>
+                                    <option value="6">II</option>
+                                    <option value="7">III</option>
+                                    <option value="8">IV</option>
+                                    <option value="11">IX</option>
+                                    <option value="3">LKG</option>
+                                    <option value="19">New Admission(19-20)</option>
+                                    <option value="16">Nursery</option>
+                                    <option value="4">UKG</option>
+                                    <option value="12">V</option>
+                                    <option value="13">VI</option>
+                                    <option value="9">VII</option>
+                                    <option value="10">VIII</option>
+                                    <option value="14">X</option>
+                                    <option value="1">XI</option>
+                                    <option value="15">XII</option>
+                                </select>
+              <!-- <input class="input100" type="text" name="class" placeholder="Type your Class"> -->
+              <span class="focus-input100" data-symbol="&#10000;"></span>
+            </div>
+            <div class="wrap-input100  m-b-23" id="stream1" >
+              <span class="label-input100">Stream</span>
+              <select class="input100" name="stream" id="stream">
+                <option value =''>Select Stream</option>
+                <option value ='science'>Science</option>
+                <option value ='commerce'>Commerce</option>
+                <option value ='art'>Art</option>
+              </select>
+              <span class="focus-input100" data-symbol="&#10000;"></span>
+            </div>
+
+
+            <div class="wrap-input100 validate-input m-b-23" data-validate = "Phone No is reauired">
+              <span class="label-input100">Phone No</span>
+              <input class="input100" type="number" name="phone_no" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;" id='phone_no' placeholder="Type your Phone No">
+              <span class="focus-input100" data-symbol="&#9742;"></span>
+            </div>
+            <div class="text-info" style="text-align:right;margin-top: -20px">
+              <span class="text-danger" style="cursor: pointer;" onclick="sendSms()">Send OTP </span></div>
+             <div class="error text-danger"></div>
+             <div class="error1 text-success"></div>
+
+              <div class="wrap-input100 validate-input m-b-23"  id='phone_no_otp1' data-validate = "Phone No OTP is reauired">
+              <span class="label-input100" >Enter Phone NO Otp</span>
+              <input class="input100" type="number" name="phone_no_otp" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==6) return false;" id='phone_no_otp' placeholder="Type your Phone No OTP">
+
+              
+              <span class="focus-input100" data-symbol="&#9742;"></span>
+            </div>
+
+              <div class="wrap-input100 validate-input" data-validate="Password is required">
+                <span class="label-input100">Password</span>
+                <input class="input100" type="password" name="password" id='password' placeholder="Type your password">
+                <span class="focus-input100" data-symbol="&#xf190;"></span>
+              </div>
+              
+               <div class="CheckPasswordMatch text-danger"></div>
+                <div class="CheckPasswordMatch1 text-success"></div>
+              <div class="wrap-input100 validate-input" data-validate="Comfirm Password is required">
+                <span class="label-input100">Comfirm Password</span>
+                <input class="input100" type="c_password" name="c_password" id='c_password' placeholder="Type your Comfirm password">
+                <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+
+
+
+
+                </div>
+          </div>
+          
+
+          
+          
+          <!-- <div class="text-right p-t-8 p-b-31">
+            <a href="#">
+              Forgot password?
+            </a>
+          </div> -->
+          <div class="otperror text-danger text-center"></div>
+          <div class="otperror1 text-danger text-center"></div>
+          <div class="otperror2 text-danger text-center"></div>
+          <div class="container-login100-form-btn" style="margin-top: 25px;">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+
+              <input class="input100" type="submit" name="submit" id='submit' value="SUBMIT">
+              <!-- <button class="login100-form-btn">
+                Login
+              </button> -->
+            </div>
+          </div>
+
+        <!--  <div class="txt1 text-center p-t-54 p-b-20">
+            <span>
+              Or Sign Up Using
+            </span>
+          </div> -->
+
+          <!-- <div class="flex-c-m">
+            <a href="#" class="login100-social-item bg1">
+              <i class="fa fa-facebook"></i>
+            </a>
+
+            <a href="#" class="login100-social-item bg2">
+              <i class="fa fa-twitter"></i>
+            </a>
+
+            <a href="#" class="login100-social-item bg3">
+              <i class="fa fa-google"></i>
+            </a>
+          </div> -->
+
+        <!--  <div class="flex-col-c p-t-155">
+            <span class="txt1 p-b-17">
+              Or Sign Up Using
+            </span>
+
+            <a href="#" class="txt2">
+              Sign Up
+            </a>
+          </div> -->
+        </form>
+      </div>
+    </div>
+    
+  </div>
+  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--<section style="padding:50px 0 50px 0;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="one" style="text-align: center !important;">ALL IN ONE INTEGRATED SOLUTION</h1> </div>
+			</div>
+			<div class="row service-area">
+				<div class="col-md-4">
+					<div class="service"> <img class="pulse" src="images/Create-Online-Tests.png">
+						<h1>PRE-EXAM</h1>
+						<p>Pre Scheduling Feature Easy Assignment of Exams Pre verification</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service"> <img class="pulse" src="images/Organize-Private-Test.png">
+						<h1>DURING EXAM</h1>
+						<p>Time based exam access control Pickup from where you left User Image Authentication</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service"> <img class="pulse" src="images/Statical-Report-of-Your-Test.png">
+						<h1>POST EXAM</h1>
+						<p>Accurate results AI based proctoring Detailed proctoring Report</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>-->
+	
+	
+	
+	
+	<!--<section class="sptb bg-white">
+	<div class="container"> 
+	<div class="section-title center-block text-center"> 
+	<h2 style="color:#fff;">How It Works?</h2> 
+	<span class="sectiontitle-design"><span class="icons"></span></span> 
+	<p style="color:#fff;">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+	</div> <div class="row"> 
+	<div class="col-lg-3 col-md-6 col-sm-6"> 
+	<div class=""> <div class="mb-lg-0 mb-4"> 
+	<div class="service-card text-center"> 
+	<div class="icon-bg box-shadow icon-service text-purple about"> 
+	<img src="images/employees.png" alt="img"> 
+	</div> 
+	<div class="servic-data mt-3"> 
+	<h4 style="color:#fff;" class="font-weight-semibold mb-2">Register</h4> 
+	<p class="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
+	</div> 
+	</div> 
+	</div> 
+	</div> 
+	</div> 
+	<div class="col-lg-3 col-md-6 col-sm-6"> 
+	<div class=""> <div class="mb-lg-0 mb-4"> 
+	<div class="service-card text-center"> 
+	<div class=" icon-bg box-shadow icon-service text-purple about"> 
+	<img src="images/megaphone.png" alt="img"> 
+	</div> 
+	<div class="servic-data mt-3">
+	<h4 style="color:#fff;" class="font-weight-semibold mb-2">Create Account</h4> 
+	<p class="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
+	</div> 
+	</div> 
+	</div> 
+	</div> 
+	</div> 
+	<div class="col-lg-3 col-md-6 col-sm-6"> 
+	<div class=""> <div class="mb-sm-0 mb-4"> 
+	<div class="service-card text-center"> 
+	<div class="icon-bg box-shadow icon-service text-purple about"> 
+	<img src="images/pencil.png" alt="img"> 
+	</div> <div class="servic-data mt-3"> 
+	<h4 style="color:#fff;" class="font-weight-semibold mb-2">Coursed Posts</h4> 
+	<p class="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
+	</div> 
+	</div> 
+	</div> 
+	</div> 
+	</div> 
+	<div class="col-lg-3 col-md-6 col-sm-6"> 
+	<div class=""> <div class=""> 
+	<div class="service-card text-center"> 
+	<div class="icon-bg box-shadow icon-service text-purple about"> 
+	<img src="images/coins.png" alt="img"> 
+	</div> 
+	<div class="servic-data mt-3"> 
+	<h4 style="color:#fff;" class="font-weight-semibold mb-2">Get Earnings</h4> 
+	<p class="text-muted mb-0">Nam libero tempore, cum soluta nobis est eligendi cumque facere possimus</p>
+	</div> 
+	</div> 
+	</div> 
+	</div> 
+	</div> 
+	</div> 
+	</div> 
+	</section>-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<h1 class="online" style="">Various Types of Tests</h1> </div>
+		</div>
+	</section>
+	<section class="questions">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="bulk">
+						<h1>Aptitude Tests</h1>
+						
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="bulk">
+						<h1>Behavioral Tests</h1>
+						
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="bulk">
+						<h1>Psychometric Tests</h1>
+						
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 50px;">
+				<div class="col-md-4">
+					<div class="bulk">
+						<h1>Coding Tests</h1>
+						
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="bulk">
+						<h1>AI/ML/ blockchain</h1>
+						
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="bulk">
+						<h1>Domain Tests</h1>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--<section style="padding:30px 0 30px 0;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/xQ9fSRxWJVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-6">
+					<p class="take" style="">Take Any Test is a part of K-one Venture Ltd. Mr. KrishanPal is the Founder of K-One Venture TAT is created with an aim to simplify the online examination system.</p>
+				</div>
+			</div>
+		</div>
+	</section>-->
+	
+	
+	
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if(n > slides.length) {
+			slideIndex = 1
+		}
+		if(n < 1) {
+			slideIndex = slides.length
+		}
+		for(i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for(i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " active";
+	}
+	</script>
+	
+	
+	
+	
+	<!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 style="text-align:center;">Contact</h2>
+          <p style="text-align:center;"> Contact us through various mode of communication.We are always here for you, ready to serve, and an approach away.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <h4>Email:</h4>
+                <p>tat@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+	
+	
+	
+	
+	
+	
+	
+	<section class="footer-top" style="padding:50px 0 50px 0;background-image:url(images/ncisjc-1.png);">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h1 class="footer-head">Find Us On Facebook</h1>
+					<!--            <img src="images/" alt="LOGO">-->
+					<iframe class="img-fluid" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fschoolbellq&tabs=timeline&width=300&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+				</div>
+				<div class="col-md-3">
+					<h1 class="footer-head">WHAT WE OFFER</h1>
+					<ul class="footer-menu">
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Exclusive Tests</li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Test Categories</li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Private Tests</li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Group Tests</li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact Us</li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Login / Create Account</li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Get Verification Mail</li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h1 class="footer-head">Pages</h1>
+					<ul class="footer-menu">
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="index.html"> Home</a></li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="about.html"> About</a></li>
+						<li> <i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#"> Services</a></li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="product.html"> Product</a></li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href="#"> Pricing</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h1 class="footer-head">Call Us</h1>
+					<p style="font-size: 18px;
+    color: #fff;">Contact Us:123456789</p>
+					<p style="font-size: 18px;
+    color: #fff;">Email:tat@gmail.com</p>
+					<ul class="social-icon">
+						<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+						<li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+						<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+						<li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+						<li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p class="copy">Copyright@2022 <span style="color:#1d678d;">Take Any Test</span></p>
+				</div>
+				<div class="col-md-6">
+					<p class="design">Designed & Developed By
+						<a href="https://www.koneventures.com/"> <span style="color:#1d678d;">Kone Ventures</span></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="jquery.counterup.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script>
+	jQuery(document).ready(function($) {
+		$('.counter').counterUp({
+			delay: 10,
+			time: 1000
+		});
+	});
+	</script>
+	<script>
+	$(document).ready(function() {
+		$('.site-slider').owlCarousel({
+			loop: true,
+			auto: true,
+			dots: true,
+			mouseDrag: true,
+			autoplay: true,
+			items: 1,
+			nav: false,
+			onTranslated: function() {
+				var $slideHeading = $('.site-slider .owl-item.active .slider-text h3');
+				var $slidePara = $('.site-slider .owl-item.active .slider-text p');
+				$slideHeading.addClass('animate-in-fast').on('animationend', function() {
+					$slideHeading.removeClass('animate-in-fast').addClass('opacFull');
+				});
+				$slidePara.addClass('animate-in-slow').on('animationend', function() {
+					$slidePara.removeClass('animate-in-slow').addClass('opacFull');
+				});
+			},
+			onChange: function() {
+				var $slideHeading = $('.site-slider .owl-item.active .slider-text h3');
+				var $slidePara = $('.site-slider .owl-item.active .slider-text p');
+				$slideHeading.removeClass('opacFull');
+				$slidePara.removeClass('opacFull');
+			}
+		});
+	});
+	$(window).on('load', function() {
+		var $slideHeading = $('.site-slider .owl-item.active .slider-text h3');
+		var $slidePara = $('.site-slider .owl-item.active .slider-text p');
+		$slideHeading.addClass('animate-in-fast').on('animationend', function() {
+			$slideHeading.removeClass('animate-in-fast').addClass('opacFull');
+		});
+		$slidePara.addClass('animate-in-slow').on('animationend', function() {
+			$slidePara.removeClass('animate-in-slow').addClass('opacFull');
+		});
+	});
+	</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+        autoplayTimeout:1000,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>
